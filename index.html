@@ -11,34 +11,38 @@
     <h2>Password Generator</h2>
 
     <div class="output-box">
-      <input type="text" id="password" placeholder="P4$5W0rD!" readonly>
-      <button id="copyBtn">📋</button>
+      <!-- YA NO es readonly -->
+      <input type="text" id="password" placeholder="Escribe o genera una contraseña">
+      <button id="copyBtn">Copiar</button>
     </div>
 
     <div class="settings">
+
       <div class="length-box">
-        <span>Character Length</span>
-        <span id="lengthValue">10</span>
+        <span>Longitud</span>
+        <span id="lengthValue">12</span>
       </div>
 
-      <input type="range" id="length" min="8" max="32" value="10">
+      <input type="range" id="length" min="8" max="32" value="12">
 
-      <label><input type="checkbox" id="uppercase"> Include Uppercase Letters</label>
-      <label><input type="checkbox" id="lowercase"> Include Lowercase Letters</label>
-      <label><input type="checkbox" id="numbers"> Include Numbers</label>
-      <label><input type="checkbox" id="symbols"> Include Symbols</label>
+      <label><input type="checkbox" id="uppercase" checked> Mayúsculas</label>
+      <label><input type="checkbox" id="lowercase" checked> Minúsculas</label>
+      <label><input type="checkbox" id="numbers" checked> Números</label>
+      <label><input type="checkbox" id="symbols"> Símbolos</label>
 
       <div class="strength-box">
-        <span>STRENGTH</span>
+        <span>Seguridad</span>
         <div id="bars">
           <div></div><div></div><div></div><div></div>
         </div>
       </div>
 
-      <button id="generate">GENERATE →</button>
+      <button id="generate">Generar</button>
+
     </div>
   </div>
 
   <script src="script.js"></script>
 </body>
 </html>
+      

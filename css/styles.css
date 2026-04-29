@@ -1,34 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: #18171f;
-  color: white;
-  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #14131b, #0f0e17);
+  color: #e6e5ea;
+  font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .container {
-  width: 350px;
+  width: 380px;
 }
 
 h2 {
   text-align: center;
   color: #817d92;
+  margin-bottom: 20px;
 }
 
 .output-box {
   display: flex;
   background: #24232c;
-  padding: 10px;
+  padding: 15px;
+  border-radius: 8px;
   margin-bottom: 20px;
 }
 
 .output-box input {
   flex: 1;
-  background: none;
+  background: transparent;
   border: none;
-  color: #e6e5ea;
+  color: #a4ffaf;
   font-size: 18px;
+  outline: none;
 }
 
 .output-box button {
@@ -36,26 +43,30 @@ h2 {
   border: none;
   color: #a4ffaf;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .settings {
   background: #24232c;
   padding: 20px;
+  border-radius: 8px;
 }
 
 .length-box {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 input[type="range"] {
   width: 100%;
-  margin: 10px 0;
+  accent-color: #a4ffaf;
 }
 
 label {
   display: block;
-  margin: 8px 0;
+  margin: 10px 0;
+  cursor: pointer;
 }
 
 .strength-box {
@@ -64,6 +75,7 @@ label {
   align-items: center;
   background: #18171f;
   padding: 10px;
+  border-radius: 5px;
   margin-top: 10px;
 }
 
@@ -73,17 +85,26 @@ label {
 }
 
 #bars div {
-  width: 8px;
-  height: 20px;
-  border: 1px solid white;
+  width: 10px;
+  height: 22px;
+  border: 1px solid #e6e5ea;
 }
 
 #generate {
   width: 100%;
-  padding: 10px;
   margin-top: 15px;
+  padding: 12px;
   background: #a4ffaf;
+  color: #18171f;
   border: none;
-  cursor: pointer;
+  border-radius: 5px;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
 }
+
+#generate:hover {
+  background: #7cff8f;
+}
+ 
+
